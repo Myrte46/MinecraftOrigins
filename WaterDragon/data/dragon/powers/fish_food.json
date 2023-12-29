@@ -1,0 +1,11 @@
+{
+    "name": "Dragon diet",
+    "description": "You're adapted to only eating fish.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "dragon:not_fish"
+        }
+    }
+}

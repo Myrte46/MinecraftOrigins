@@ -1,0 +1,11 @@
+{
+    "type": "origins:inventory",
+    "key":{
+        "key": "key.origins.primary_active"
+    },
+    "container_type": "double_chest",
+    "name": "Inventory",
+    "title": "Chest Storage",
+    "description": "You have a double chest of extra inventory.",
+    "drop_on_death": true
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Climb",
+  "description": "You have the ability to climb.",
+  "type": "origins:multiple",
+  "climb": {
+    "type": "origins:climbing",
+    "allow_holding": true,
+    "condition": {
+      "type": "origins:collided_horizontally"
+    },
+    "hold_condition": {
+      "type": "origins:sneaking"
+    }
+  },
+  "jump":{
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5
+    }
+  }
+}

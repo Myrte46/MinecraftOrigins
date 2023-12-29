@@ -1,0 +1,45 @@
+{
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "ghost_phase": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 10,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:unphasable"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:swimming"
+                },
+                {
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:water",
+                        "inverted": true
+                    }
+                }
+            ]
+        },
+        "name": "Ghost Phase",
+        "description": "You can phaase though all blocks when in ghost form"
+    }
+}

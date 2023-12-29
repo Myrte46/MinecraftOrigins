@@ -1,0 +1,15 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.5
+    },
+    "name": "Fighter In Training",
+    "description": "You deal half damage while flying with an elytra."
+}

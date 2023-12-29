@@ -1,0 +1,28 @@
+{
+	"type": "origins:active_self",
+	"name": "Hero's power",
+	"description": "Gain strength 2 and resistance 1 for 30 seconds with a one minute cooldown.",
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effects": [
+			{
+				"effect": "minecraft:strength",
+				"duration": 600,
+				"amplifier": 1
+			},
+			{
+				"effect": "minecraft:resistance",
+				"duration": 600
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active"
+	},
+	"cooldown": 1200,
+	"hud_render": {
+		"should_render": true,
+		"bar_index": 24,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+	}
+}

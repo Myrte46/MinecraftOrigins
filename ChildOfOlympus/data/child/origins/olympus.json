@@ -1,0 +1,25 @@
+{
+	"powers": [
+		"child:health",
+		"child:launch",
+		"child:teleport",
+		"child:lightning",
+		"child:double_jump",
+		"child:break_speed",
+		"child:beam",
+		"child:no_falling",
+		"child:chest",
+		"child:water_breath",
+		"child:armored",
+		"child:less_food",
+		"child:faster",
+		"child:no_shield",
+		"child:god_duel",
+		"child:nether"
+	],
+	"icon": "minecraft:lightning_rod",
+	"order": 10,
+	"impact": 3,
+	"name": "Child Of Olympus",
+	"description": "As a child of the gods, you gain significant abilities that make you better and stronger than mere mortals."
+}

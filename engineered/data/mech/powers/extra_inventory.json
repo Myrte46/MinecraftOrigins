@@ -1,0 +1,11 @@
+{
+    "type": "origins:inventory",
+    "key":{
+        "key": "key.origins.primary_active"
+    },
+    "container_type": "dropper",
+    "name": "Extra Inventory",
+    "title": "Extra Inventory",
+    "description": "You have 9 extra slots of inventory.",
+    "drop_on_death": false
+}

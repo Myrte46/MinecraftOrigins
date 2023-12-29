@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.5
+    },
+    "name": "Strong Legs",
+    "description": "You take half fall damage."
+}

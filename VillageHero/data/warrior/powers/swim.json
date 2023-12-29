@@ -1,0 +1,21 @@
+{
+    "type": "apoli:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+            "show_particles": false,
+            "show_icon": false,
+            "duration": 2
+        }
+    },
+    "condition": {
+        "type": "origins:fluid_height",
+        "inverted": true,
+        "fluid": "minecraft:water",
+        "comparison": "==",
+        "compare_to": 0
+    },
+    "interval": 1,
+    "hidden": true
+}

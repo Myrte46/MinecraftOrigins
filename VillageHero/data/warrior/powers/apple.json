@@ -1,0 +1,35 @@
+{
+    "type": "origins:action_on_item_use",
+    "name": "Yum",
+    "description": "Apples give you golden apple effects",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:feed",
+                "food": 4,
+                "saturation": 1
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:absorption",
+                        "duration": 2400
+                    },
+                    {
+                        "effect": "minecraft:regeneration",
+                        "duration": 100,
+                        "amplifier": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:apple"
+        }
+    }
+}

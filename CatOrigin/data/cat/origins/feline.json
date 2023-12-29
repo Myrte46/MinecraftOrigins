@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"cat:less_health",
+		"cat:speed",
+		"cat:jump_walk",
+		"cat:small",
+		"cat:milk",
+		"cat:weak_arms",
+		"cat:meat_lover",
+		"origins:fall_immunity",
+		"origins:velvet_paws",
+		"origins:scare_creepers",
+		"origins:cat_vision",
+		"origins:water_vulnerability"
+	],
+	"icon": "minecraft:cat_spawn_egg",
+	"order": 10,
+	"impact": 2,
+	"name": "Cat",
+	"description": "An updated version of the feline."
+}

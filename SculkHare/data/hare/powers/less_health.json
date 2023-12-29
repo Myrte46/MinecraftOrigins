@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"name": "Squishy",
+	"description": "You can't take much hits in comparrison to a normal human.",
+
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+        "value": -6,
+        "operation": "addition"
+	}
+}

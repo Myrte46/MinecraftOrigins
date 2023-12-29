@@ -1,0 +1,12 @@
+{
+    "type": "origins:climbing",
+    "allow_holding": true,
+    "condition": {
+        "type": "origins:collided_horizontally"
+    },
+    "hold_condition": {
+        "type": "origins:sneaking"
+    },
+    "name": "Climber Claws",
+    "description": "You are able to climb any surface."
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Break Speed",
+    "description": "You break blocks five times as fast.",
+    "type": "origins:modify_break_speed",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 4
+    }
+}

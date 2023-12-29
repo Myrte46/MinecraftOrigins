@@ -1,0 +1,21 @@
+{
+    "type": "origins:conditioned_attribute",
+    "name": "Practice makes perfect",
+    "description": "Swords and axes deal two times more damage",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_base",
+        "value": 1
+    },
+    "conditions": [
+        {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand"
+        },
+        {
+            "type": "origins:in_tag",
+            "tag": "warrior:sword_axe"
+        }
+    ],
+    "tick_rate": 1
+}

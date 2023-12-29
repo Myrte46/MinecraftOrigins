@@ -1,0 +1,48 @@
+{
+    "type": "origins:multiple",
+    "name": "Stealth",
+    "description": "Pressing primary, you become invisible and speedy.",
+    "active": {
+        "type": "origins:cooldown",
+        "cooldown": 600,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "trigger": {
+        "type": "origins:active_self",
+        "cooldown": 2400,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 20,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:speed",
+                        "duration": 600,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:*_active"
+                }
+            ]
+        }
+    },
+    "invis": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_active",
+            "compare_to": 0,
+            "comparison": "!="
+        }
+    }
+}

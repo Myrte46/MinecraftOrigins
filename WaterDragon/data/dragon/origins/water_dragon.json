@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"dragon:water_dash",
+		"dragon:water_blast",
+		"origins:swim_speed",
+		"dragon:water_vision",
+		"origins:aqua_affinity",
+		"origins:like_water",
+		"origins:slow_falling",
+		"dragon:beach_spawn",
+		"dragon:saturation",
+		"dragon:respiration",
+		"dragon:small",
+		"dragon:double_fire",
+		"dragon:fish_food",
+		"dragon:hot_pain"
+	],
+	"icon": "minecraft:water_bucket",
+	"order": 10,
+	"impact": 2,
+	"name": "Water Dragon",
+	"description": "These dragon were born in the beaches, being born to hunt and swim, run and fly fast."
+}

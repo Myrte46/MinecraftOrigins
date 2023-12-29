@@ -1,0 +1,82 @@
+{
+	"name": "Fish food",
+	"description": "You can only eat fish and ink sacks.",
+	"type": "origins:multiple",
+	"fish": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "ink:fish"
+					},
+					"inverted": true
+				},
+				{
+					"type": "origins:food"
+				}
+			]
+		}
+	},
+	"ink": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:equipped_item_action",
+					"equipment_slot": "mainhand",
+					"action": {
+						"type": "origins:consume",
+						"amount": 1
+					}
+				},
+				{
+					"type": "origins:feed",
+					"food": 4,
+					"saturation": 4
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:ink_sac"
+								}
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"item": "minecraft:glow_ink_sac"
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "origins:food_level",
+					"compare_to": 20,
+					"comparison": "!="
+				}
+			]
+		},
+		"key": {
+			"key": "key.use"
+		}
+	}
+}

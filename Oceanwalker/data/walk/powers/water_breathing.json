@@ -1,0 +1,15 @@
+{
+    "type": "origins:action_over_time",
+    "condition": {
+        "type": "origins:air",
+        "comparison": "!=",
+        "compare_to": 300
+    },
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    },
+    "name": "Dual breath",
+    "description": "You can breathe both air and water."
+}

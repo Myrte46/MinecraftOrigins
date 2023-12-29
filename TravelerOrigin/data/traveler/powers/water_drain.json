@@ -1,0 +1,121 @@
+{
+    "type": "origins:multiple",
+    "drain": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "traveler:water_resource",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:moving"
+        }
+    },
+    "dying": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:damage",
+            "amount": 1,
+            "source": {
+                "name": "starve",
+                "bypasses_armor": true,
+                "unblockable": true
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "traveler:water_resource",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "traveler:water_resource",
+            "operation": "set",
+            "change": 300
+        }
+    },
+    "drink_bottle": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "traveler:water_resource",
+            "change": 100
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        }
+    },
+    "drink_bucket": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.use"
+        },
+        "cooldown": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "traveler:water_resource",
+                    "change": 200
+                },
+                {
+                    "type": "origins:replace_inventory",
+                    "slot": "weapon.mainhand",
+                    "stack": {
+                        "item": "minecraft:bucket"
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:water_bucket"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
+        }
+    },
+    "get_speed":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "is_ambient": true,
+                "show_icon": false,
+                "show_particles": false,
+                "amplifier": 1
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "traveler:water_resource",
+            "comparison": ">",
+            "compare_to": 75
+        }
+    },
+    "name": "Water",
+    "description": "You have a water meter that slowly drains over time, giving you speed when above 25%."
+}

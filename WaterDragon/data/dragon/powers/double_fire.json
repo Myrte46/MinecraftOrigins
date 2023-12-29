@@ -1,0 +1,30 @@
+{
+    "type":"origins:modify_damage_taken",
+    "modifier":{
+      "value": 1,
+      "operation":"multiply_base"
+    },
+    "damage_condition":{
+      "type":"origins:or",
+      "conditions":[
+        {
+          "type":"origins:name",
+          "name":"lava"
+        },
+        {
+          "type":"origins:name",
+          "name":"onFire"
+        },
+        {
+          "type":"origins:name",
+          "name":"inFire"
+        },
+        {
+          "type":"origins:name",
+          "name":"hotFloor"
+        }
+      ]
+    },
+    "name": "Evaporating",
+    "description": "Fire and Lava deals double damage because of your body made of water."
+  }

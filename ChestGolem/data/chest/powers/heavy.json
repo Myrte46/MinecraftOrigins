@@ -1,0 +1,20 @@
+{
+    "type": "origins:multiple",
+    "faster_falling":{
+        "type": "origins:modify_falling",
+        "velocity": 0.15,
+        "take_fall_damage": true
+    },
+    "water_walk":{
+        "type": "origins:ignore_water"
+    },
+    "appitite":{
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1
+        }
+    },
+    "name": "Heavy",
+    "description": "Due to being heavy, you fall faster, can't swim, and have a larger appetite."
+}

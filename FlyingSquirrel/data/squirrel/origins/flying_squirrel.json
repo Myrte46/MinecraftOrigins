@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"squirrel:elytra",
+		"squirrel:falling",
+		"squirrel:riding",
+		"squirrel:climb",
+		"squirrel:nocturnal",
+		"squirrel:micro",
+		"squirrel:squishy",
+		"origins:vegetarian",
+		"squirrel:high_sleep",
+		"squirrel:less_damage"
+	],
+	"icon": "minecraft:cocoa_beans",
+	"order": 10,
+	"impact": 3,
+	"name": "Flying Squirrel",
+	"description": "You are a small gliding rodent."
+}

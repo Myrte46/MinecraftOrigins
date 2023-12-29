@@ -1,0 +1,20 @@
+{
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.movement_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.25
+        }
+    },
+    "knockback": {
+        "type": "origins:modify_attribute",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        }
+    },
+    "hidden": true
+}

@@ -1,0 +1,36 @@
+{
+    "type": "origins:multiple",
+    "name": "Efficient worker",
+    "description": "You mine double the ores, except diamond and netherite which you mine 1.5 times.",
+    "double_ores":{
+        "type": "origins:replace_loot_table",
+        "replace":{
+            "([a-z|0-9|\\-|_]).*:blocks\/((?!diamond).*)_ore": "mech:double_drops"
+        }
+    },
+    "diamond":{
+        "type": "origins:replace_loot_table",
+        "replace":{
+            "minecraft:blocks/diamond_ore": "mech:half_drops"
+        }
+    },
+    "ancient_debris":{
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "minecraft:blocks/ancient_debris": "mech:auto_smelt_netherite"
+        }
+    },
+    "mine": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                }
+            ]
+        },
+        "allow": true
+    }
+}

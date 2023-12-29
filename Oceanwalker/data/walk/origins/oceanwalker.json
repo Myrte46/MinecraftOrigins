@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"walk:ground_walk",
+		"origins:aqua_affinity",
+		"origins:aquatic",
+		"walk:water_breathing",
+		"origins:water_vision",
+		"origins:fall_immunity",
+		"walk:keep_inventory",
+		"walk:slow_land_speed",
+		"walk:higher_water_jump"
+	],
+	"icon": "minecraft:bubble_coral",
+	"order": 10,
+	"impact": 3,
+	"name": "Oceanwalker",
+	"description": "Roaming the ocean floors, these creatures are made to survive underwater."
+}

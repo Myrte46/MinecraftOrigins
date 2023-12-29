@@ -1,0 +1,18 @@
+{
+	"type": "origins:active_self",
+	"name": "Helping hand",
+	"description": "You can summon an iron golem once every two minutes.",
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "summon iron_golem ~ ~1 ~"
+	},
+	"key": {
+		"key": "key.origins.secondary_active"
+	},
+	"cooldown": 2400,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 6
+	}
+}

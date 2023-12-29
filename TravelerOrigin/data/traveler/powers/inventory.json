@@ -1,0 +1,7 @@
+{
+    "name": "Extra space",
+    "description": "You have a chest's worth of extra space that doesn't drop on death.",
+    "type": "origins:inventory",
+    "container_type": "chest",
+    "title": "Backpack"
+}

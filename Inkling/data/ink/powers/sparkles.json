@@ -1,0 +1,7 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:glow",
+    "frequency": 4,
+    "name": "Glow",
+    "description": "You emit glow squid particles."
+}

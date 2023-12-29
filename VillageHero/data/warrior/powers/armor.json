@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "name": "Naturally strong",
+    "description": "You have natural armor.",
+    "modifier": {
+        "attribute": "minecraft:generic.armor",
+        "operation": "addition",
+        "value": 4
+    }
+}

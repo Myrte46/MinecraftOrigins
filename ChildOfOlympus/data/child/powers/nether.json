@@ -1,0 +1,19 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 21,
+            "show_icon": false,
+            "show_particles": false
+        }
+    },
+    "name": "Nether bane",
+    "description": "You hate the nether."
+}

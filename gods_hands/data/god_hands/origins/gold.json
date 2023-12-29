@@ -1,0 +1,9 @@
+{
+    "upgrades": [
+        {
+            "announcement": "THE CONDITION OF MINING GOLD HAS BEEN MET."
+        }
+    ],
+    "unchoosable": true,
+    "impact": 0
+}

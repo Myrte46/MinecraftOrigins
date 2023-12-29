@@ -1,0 +1,33 @@
+{
+    "type": "origins:multiple",
+    "damage": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:from_falling"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "flyIntoWall"
+                }
+            ]
+        }
+    },
+    "elytra": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "prevent_elytra_wearing": {
+        "type": "origins:restrict_armor",
+        "chest": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:elytra"
+            }
+        }
+    },
+    "name": "Elytra",
+    "description": "You have a passive elytra."
+}

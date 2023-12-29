@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_exhaustion",
+    "name": "small diet",
+    "description": "Since you are so small, you need less food.",
+    "modifier": {
+        "name": "Increased exhaustion",
+        "operation": "multiply_base",
+        "value": -0.5
+    }
+}

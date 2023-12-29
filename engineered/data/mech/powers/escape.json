@@ -1,0 +1,70 @@
+{
+    "type": "origins:multiple",
+    "name": "Ultimate Escape",
+    "description": "You can access blind spectator mode for ten seconds once every two minutes.",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "min_action": {
+            "type": "origins:execute_command",
+            "command": "gamemode survival @s"
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "blindness":{
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/block/black_concrete.png",
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "visible_in_third_person": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 0,
+            "comparison": "!="
+        }
+    },
+    "spectator": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions":[
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 10
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "gamemode spectator @s"
+                }
+            ]
+        },
+        "cooldown": 2400,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 20,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+        }
+    },
+    "over_time": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1,
+            "operation": "add"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 0,
+            "comparison": "!="
+        }
+    }
+}

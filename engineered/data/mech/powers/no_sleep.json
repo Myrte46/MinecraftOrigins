@@ -1,0 +1,17 @@
+{
+    "name": "Not human",
+    "description": "You don't get tired and you don't need food.",
+    "type": "origins:multiple",
+    "no_phantoms": {
+        "type": "origins:modify_insomnia_ticks",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "no_sleep": {
+        "type": "origins:prevent_sleep",
+        "set_spawn_point": true,
+        "message": "You don't feel tired enough to sleep"
+    }
+}

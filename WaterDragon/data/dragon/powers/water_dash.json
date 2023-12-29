@@ -1,0 +1,36 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 240,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 16
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "x": 0,
+                "y": 0.1,
+                "z": 1.2,
+                "space": "local",
+                "set": true
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.dolphin.splash",
+                "volume": 1,
+                "pitch": 2
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:dust 0 0 1 1.5 ~ ~ ~ 0.6 0.02 0.6 0.1 10"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "name": "Water Dash",
+    "description": "Every 12 seconds, you can launch yourself forwards."
+}

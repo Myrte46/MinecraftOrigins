@@ -1,0 +1,55 @@
+{
+    "type": "origins:multiple",
+    "name": "Coal fuel",
+    "description": "You run on flames from coal, and are unable to consume normal food.",
+    "no_food": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:food"
+        }
+    },
+    "coal": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:feed",
+                    "food": 4,
+                    "saturation": 4
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:coal"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:food_level",
+                    "compare_to": 20,
+                    "comparison": "!="
+                }
+            ]
+        },
+        "key": {
+            "key": "key.use"
+        }
+    }
+}

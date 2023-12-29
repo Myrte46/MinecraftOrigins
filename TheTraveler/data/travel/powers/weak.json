@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"name": "Weak",
+	"description": "It's normal to have 8 hearts... Right?",
+
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+        "value": -4,
+        "operation": "addition"
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "God_Hands",
+    "description": "As god hands, you possess extraordinary punching abilities that can cause explosions and deal devastating blows. Your fists are your most lethal weapons, and you have honed your skills to perfection. Your relentless pursuit of power has granted you additional buffs that enhance your combat prowess.\n\nAbilities:\n\nExplosive Punch: Your punches generate explosive energy upon impact, causing additional damage to both your target and the surrounding area. The force of your punches can create small explosions, creating chaos and devastation in combat.\n\nSuper Punch: Your training has unlocked a hidden potential within you, allowing you to deliver supercharged punches. These punches have incredible force and can send opponents flying or shatter through solid objects with ease. Your super punches are significantly more powerful than your regular punches.\n\nBuffs:\n\nFist of Power: Your fists grow stronger with each victory. Every time you defeat a mob, your fist gains experience and levels up. Each level increases your punch damage and grants you a visual enhancement, such as crackling energy around your hands.\n\nVitality Surge: Whenever you slay five mobs, you gain half a heart, symbolizing the life essence absorbed from your fallen foes. This replenishes your health and grants you increased durability in battles.\n\nBloodlust: Defeating other players in combat grants you a boost of vitality. Each time you eliminate another player, you absorb 1-2 hearts from them, instantly restoring your health and strengthening your resolve.\n\nMining Expertise: Your enhanced physical abilities extend beyond combat. You possess the extraordinary ability to mine almost anything with your bare hands, excluding obsidian and other exceptionally hard materials. This allows you to gather resources more efficiently and explore your surroundings without the need for conventional tools.\nThe God Hands origin combines explosive punches, super punches, and various buffs to create a formidable character with both offensive and defensive advantages. Use your abilities and buffs wisely to dominate your enemies and become an unstoppable force in your world.",
+    "powers": [
+        "god_hands:breaking",
+        "god_hands:no_armor",
+        "god_hands:no_pickaxe",
+        "god_hands:no_regen"
+    ],
+    "icon": {
+        "item": "minecraft:end_crystal"
+    },
+    "order": 2,
+    "impact": 3,
+    "loading_priority": 1
+}

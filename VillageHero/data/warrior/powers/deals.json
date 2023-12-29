@@ -1,0 +1,29 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team add deals"
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "team join deals @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @s as @e[type=villager,distance=..7] run data merge entity @s {Gossips:[{Target:[I;1,1,1,1],Type:'major_positive',Value:100}]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @s as @e[type=villager,distance=..7] run data modify entity @s Gossips[{Target:[I;1,1,1,1]}].Target set from entity @p[team=deals] UUID"
+            }
+        ]
+    },
+    "interval": 20,
+    "name": "Noble prices",
+    "description": "Villagers give you much better deals."
+}

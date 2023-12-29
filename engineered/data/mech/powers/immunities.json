@@ -1,0 +1,10 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:wither",
+        "minecraft:poison",
+        "minecraft:hunger"
+    ],
+    "name": "Immunity",
+    "description": "Due to your mechanical body, you are immune to the wither, poison and hunger effects."
+}

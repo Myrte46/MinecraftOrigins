@@ -1,0 +1,287 @@
+{
+	"type": "origins:multiple",
+	"name": "Steal",
+	"description": "When you punch another player or mob with a bare fist, you throw out one item of theirs (provided there's something in the slot).",
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 600,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 13
+		}
+	},
+	"player": {
+		"type": "origins:action_on_hit",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:choice",
+						"actions": [
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.chest",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.feet",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.legs",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.head",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "weapon.offhand",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.0",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.1",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.2",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.3",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.4",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.5",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.6",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.7",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "hotbar.8",
+									"throw_randomly": true
+								},
+								"weight": 1
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:trigger_cooldown",
+						"power": "*:*_cooldown"
+					}
+				}
+			]
+		},
+		"bientity_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:actor_condition",
+					"condition": {
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:empty"
+						}
+					}
+				},
+				{
+					"type": "origins:target_condition",
+					"condition": {
+						"type": "origins:entity_type",
+						"entity_type": "minecraft:player"
+					}
+				},
+				{
+					"type": "origins:actor_condition",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_cooldown",
+						"comparison": "==",
+						"compare_to": 0
+					}
+				}
+			]
+		}
+	},
+	"mob": {
+		"type": "origins:action_on_hit",
+		"hidden": true,
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:choice",
+						"actions": [
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.chest",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.feet",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.legs",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "armor.head",
+									"throw_randomly": true
+								},
+								"weight": 1
+							},
+							{
+								"element": {
+									"type": "origins:drop_inventory",
+									"inventory_type": "inventory",
+									"slot": "weapon.mainhand",
+									"throw_randomly": true
+								},
+								"weight": 1
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:trigger_cooldown",
+						"power": "*:*_cooldown"
+					}
+				}
+			]
+		},
+		"bientity_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:actor_condition",
+					"condition": {
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:empty"
+						}
+					}
+				},
+				{
+					"type": "origins:actor_condition",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_cooldown",
+						"comparison": "==",
+						"compare_to": 0
+					}
+				}
+			]
+		}
+	}
+}

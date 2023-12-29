@@ -1,0 +1,50 @@
+{
+    "type": "origins:climbing",
+    "name": "Climb",
+    "description": "Groggymites have mastered the ability to climb blocks and cling to them",
+    "allow_holding": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block_collision",
+                "offset_x": 0.9,
+                "offset_y": 0,
+                "offset_z": 0.9
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_x": -0.9,
+                "offset_y": 0,
+                "offset_z": -0.9
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_x": 0.9,
+                "offset_y": 0,
+                "offset_z": -0.9
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_x": -0.9,
+                "offset_y": 0,
+                "offset_z": 0.9
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_x": 0.9,
+                "offset_y": 0.9,
+                "offset_z": 0.9
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_x": -0.9,
+                "offset_y": 0.9,
+                "offset_z": -0.9
+            }
+        ]
+    },
+    "hold_condition": {
+        "type": "origins:sneaking"
+    }
+}

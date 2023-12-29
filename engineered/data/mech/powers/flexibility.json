@@ -1,0 +1,53 @@
+{
+    "type": "origins:restrict_armor",
+    "head": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:leather_helmet"
+            },
+            {
+                "item": "minecraft:chainmail_helmet"
+            }
+        ],
+        "inverted": true
+    },
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:leather_chestplate"
+            },
+            {
+                "item": "minecraft:chainmail_chestplate"
+            }
+        ],
+        "inverted": true
+    },
+    "legs": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:leather_leggings"
+            },
+            {
+                "item": "minecraft:chainmail_leggings"
+            }
+        ],
+        "inverted": true
+    },
+    "feet": {
+        "type": "origins:ingredient",
+        "ingredient": [
+            {
+                "item": "minecraft:leather_boots"
+            },
+            {
+                "item": "minecraft:chainmail_boots"
+            }
+        ],
+        "inverted": true
+    },
+    "name": "Body Structure",
+    "description": "Due to the way your body is structured, you can only wear flexible armor: leather or chainmail."
+}

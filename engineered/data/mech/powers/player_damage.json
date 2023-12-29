@@ -1,0 +1,33 @@
+{
+    "type": "origins:multiple",
+    "taken": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:in_tag",
+                "tag": "mech:hostile"
+            }
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.4
+        }
+    },
+    "dealt":{
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "mech:hostile"
+            }
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.4
+        }
+    },
+    "name": "No violence",
+    "description": "You are unusued to fighting, taking more and dealing less damage."
+}

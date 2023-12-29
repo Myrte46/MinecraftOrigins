@@ -1,0 +1,40 @@
+{
+   "type":"origins:multiple",
+   "name":"Shriek",
+   "description":"Emit a sculk shriek and blind any mob and player in a 40 block radius when you press the primary key, can be triggered once every 10 seconds.",
+   "shriek":{
+      "type":"origins:active_self",
+      "entity_action":{
+         "type":"origins:and",
+         "actions":[
+            {
+               "type":"origins:play_sound",
+               "sound":"minecraft:block.sculk_shrieker.shriek"
+            },
+            {
+               "type":"origins:execute_command",
+               "command":"effect give @s[distance=..40,tag=!blindness_immune] minecraft:darkness 12 1 true"
+            }
+         ]
+      },
+      "key":{
+         "key":"key.origins.primary_active",
+         "continuous":false
+      },
+      "cooldown":440,
+      "hud_render":{
+         "should_render":false
+      }
+   },
+   "player_no_effect":{
+      "type":"origins:action_on_callback",
+      "entity_action_added":{
+         "type":"origins:execute_command",
+         "command":"tag @s add blindness_immune"
+      },
+      "entity_action_lost":{
+         "type":"origins:execute_command",
+         "command":"tag @s remove blindness_immune"
+      }
+   }
+}

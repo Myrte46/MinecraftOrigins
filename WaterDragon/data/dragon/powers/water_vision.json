@@ -1,0 +1,10 @@
+{
+    "type": "origins:toggle_night_vision",
+    "name": "water vision",
+    "description": "You see half as good in water as you do on land.",
+    "strength": 0.5,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    }
+}

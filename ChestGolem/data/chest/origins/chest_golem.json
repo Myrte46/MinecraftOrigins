@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"chest:size",
+		"chest:chest",
+		"chest:exo_skeleton",
+		"chest:bonding",
+		"chest:heavy",
+		"chest:no_armor",
+		"chest:less_damage"
+	],
+	"icon": "minecraft:chest",
+	"order": 10,
+	"impact": 1,
+	"name": "Chest Golem",
+	"description": "You are a movable storage system."
+}

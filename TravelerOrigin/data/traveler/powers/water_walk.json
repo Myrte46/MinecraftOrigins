@@ -1,0 +1,45 @@
+{
+    "type": "origins:multiple",
+    "name": "liquid Walk",
+    "description": "You can walk on water and lava.",
+    "water": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<=",
+                    "compare_to": 0.4
+                }
+            ]
+        }
+    },
+    "lava": {
+        "type": "origins:walk_on_fluid",
+        "name": "liquid Walk",
+        "description": "You can walk on water.",
+        "fluid": "lava",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:lava",
+                    "comparison": "<=",
+                    "compare_to": 0.4
+                }
+            ]
+        }
+    }
+}

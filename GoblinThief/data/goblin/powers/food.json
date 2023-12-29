@@ -1,0 +1,27 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Carnivore or cave",
+    "description": "You can only eat meat or glow berries.",
+    "item_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "goblin:food"
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:food"
+            },
+            {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "origins:ignore_diet"
+                },
+                "inverted": true
+            }
+        ]
+    }
+}

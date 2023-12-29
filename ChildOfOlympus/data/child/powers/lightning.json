@@ -1,0 +1,29 @@
+{
+    "type": "origins:active_self",
+    "name": "Zeus's Lightning",
+    "description": "Summon lightning from the sky when sneaking + secondary key.",
+    "cooldown": 100,
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "radius": 16,
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:lightning_bolt ~ ~ ~"
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:living"
+            }
+        }
+    }
+}

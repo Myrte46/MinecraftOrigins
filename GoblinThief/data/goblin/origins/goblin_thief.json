@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"goblin:steal",
+		"goblin:stealth",
+		"goblin:night_vision",
+		"goblin:size",
+		"goblin:darkness",
+		"goblin:sun_ouch",
+		"goblin:food",
+		"goblin:health"
+	],
+	"icon": "minecraft:black_glazed_terracotta",
+	"order": 10,
+	"impact": 1,
+	"name": "Goblin Thief",
+	"description": "The perfect sneaky guy."
+}

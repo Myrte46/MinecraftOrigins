@@ -1,0 +1,11 @@
+{
+	"type": "origins:attribute",
+	"name": "Nine Lives",
+	"description": "A cat only has nine lives after all.",
+
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+        "value": -2,
+        "operation": "addition"
+	}
+}

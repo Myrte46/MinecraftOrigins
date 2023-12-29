@@ -1,0 +1,10 @@
+{
+    "type": "origins:restrict_armor",
+    "hidden": true,
+    "chest": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:elytra"
+        }
+    }
+}

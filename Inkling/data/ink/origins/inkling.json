@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"ink:fish_food",
+		"ink:sparkles",
+		"ink:quick_escape",
+		"ink:hot_pain",
+		"ink:insta_lava_death"
+	],
+	"icon": "minecraft:glow_ink_sac",
+	"order": 10,
+	"impact": 3,
+	"name": "Inkling",
+	"description": "A distant relative to the glow squids of the depths, Inklings are skilled underwater survivors."
+}

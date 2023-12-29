@@ -1,0 +1,11 @@
+{
+    "name":"No shields allowed",
+    "description":"You aren't allowed to use shields.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "origins:shields"
+        }
+    }
+}

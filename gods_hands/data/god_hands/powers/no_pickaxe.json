@@ -1,0 +1,10 @@
+{
+    "name": "You have no need for a pickaxe",
+    "description": "You can mine stone, iron and gold with your bare hands. (upgradeable)",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "god_hands:stone_break"
+    },
+    "type": "origins:modify_harvest",
+    "allow": true
+}

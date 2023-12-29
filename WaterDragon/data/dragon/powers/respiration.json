@@ -1,0 +1,10 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    },
+    "interval": 40,
+    "name": "Breath Holding",
+    "description": "You can stay under water for a greater amount of time than most."
+}

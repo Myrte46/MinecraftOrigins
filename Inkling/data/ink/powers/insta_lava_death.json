@@ -1,0 +1,14 @@
+{
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "kill"
+    },
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "lava"
+    },
+    "cooldown": 0,
+    "name": "Instant lava death",
+    "description": "Whenever you take damge from lava, you die."
+}

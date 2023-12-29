@@ -1,0 +1,42 @@
+{
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:chance",
+        "action": {
+            "type": "origins:drop_inventory",
+            "slots": [
+                "weapon.offhand",
+                "hotbar.0",
+                "hotbar.1",
+                "hotbar.2",
+                "hotbar.3",
+                "hotbar.4",
+                "hotbar.5",
+                "hotbar.6",
+                "hotbar.7",
+                "hotbar.8"
+            ],
+            "item_condition":{
+                "type": "origins:is_damageable"
+            }
+        },
+        "chance": 0.4,
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:is_damageable"
+            }
+        }
+    },
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:in_tag",
+            "tag": "mech:hostile"
+        }
+    },
+    "name": "Scared",
+    "description": "There's a chance for you to drop all damageable items in your hotbar when fighting.",
+    "cooldown": 0
+}

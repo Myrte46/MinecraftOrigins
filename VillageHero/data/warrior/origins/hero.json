@@ -1,0 +1,27 @@
+{
+	"powers": [
+		"warrior:primary",
+		"warrior:spawn_friend",
+		"warrior:charge",
+		"warrior:home",
+		"warrior:iron_friend",
+		"warrior:deals",
+		"warrior:armor",
+		"warrior:regen",
+		"warrior:apple",
+		"warrior:fall_damage",
+		"warrior:damage",
+		"warrior:spawn",
+		"origins:vegetarian",
+		"warrior:diamond",
+		"warrior:resentment",
+		"warrior:sleep",
+		"warrior:no_totem",
+		"warrior:swim"
+	],
+	"icon": "minecraft:emerald",
+	"order": 11,
+	"impact": 2,
+	"name": "The Warrior",
+	"description": "You spent countless hours fighting for the safety of the villagers!"
+}

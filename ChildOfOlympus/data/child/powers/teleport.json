@@ -1,0 +1,28 @@
+{
+    "type": "origins:active_self",
+    "name": "Teleportation",
+    "description": "You can teleport up to 100 blocks away.",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 100,
+        "block": true,
+        "entity": false,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "command_at_hit": "tp @s ~ ~0.1 ~",
+        "command_step": 1
+    },
+    "cooldown": 40,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 6
+    },
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+    }
+}

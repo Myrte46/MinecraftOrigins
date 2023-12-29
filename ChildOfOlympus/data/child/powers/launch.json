@@ -1,0 +1,19 @@
+{
+    "type": "origins:launch",
+    "name": "Rocket",
+    "description": "You launch yourself 35 blocks in the air.",
+    "speed": 3,
+    "cooldown": 300,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 8,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+    }
+}

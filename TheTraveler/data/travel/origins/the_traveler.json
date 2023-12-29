@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"travel:keep_inventory",
+		"travel:elytra",
+		"travel:glide",
+		"travel:crafting",
+		"travel:sink",
+		"travel:endurance"
+	],
+	"icon": "minecraft:grass_block",
+	"order": 10,
+	"impact": 2,
+	"name": "The Traveler",
+	"description": "You used to be normal where you came from. What did you do?"
+}

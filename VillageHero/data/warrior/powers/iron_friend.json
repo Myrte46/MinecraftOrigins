@@ -1,0 +1,23 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Chill",
+    "description": "Iron golems won't attack you.",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+			{
+                "type": "origins:execute_command",
+                "command": "team add golems"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join golems @s"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join golems @e[type=minecraft:iron_golem]"
+            }
+        ]
+    }
+}

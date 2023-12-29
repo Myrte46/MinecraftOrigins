@@ -1,0 +1,5 @@
+{
+    "type": "origins:keep_inventory",
+    "name": "Core Protocol",
+    "description": "You keep your inventory on death."
+}

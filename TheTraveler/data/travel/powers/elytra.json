@@ -1,0 +1,12 @@
+{
+    "type": "origins:multiple",
+    "visuals":{
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "no_flight":{
+        "type": "origins:prevent_elytra_flight"
+    },
+    "name": "Elytra",
+    "description": "Whatever happened to you, you are fused with a broken elytra now, making you unable to fly."
+}

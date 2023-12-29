@@ -1,0 +1,13 @@
+{
+    "type": "origins:modify_jump",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5
+    },
+    "name": "Jump Height",
+    "description": "You're able to jump two blocks high underwater."
+}

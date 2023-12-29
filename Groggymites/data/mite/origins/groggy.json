@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"mite:tiny",
+		"mite:spawn",
+		"mite:vision",
+		"mite:underground",
+		"mite:climb",
+		"mite:sun",
+		"mite:food"
+	],
+	"icon": "minecraft:stone",
+	"order": 11,
+	"impact": 2,
+	"name": "Groggymite",
+	"description": "A small creature that thrives underground."
+}

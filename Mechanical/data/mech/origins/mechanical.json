@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"mech:small",
+		"mech:ores",
+		"mech:effects",
+		"mech:sink",
+		"mech:coal_fuel",
+		"origins:water_vulnerability",
+		"mech:pickaxe_sword"
+	],
+	"icon": "minecraft:redstone",
+	"order": 10,
+	"impact": 1,
+	"name": "Mechanical",
+	"description": "You were created to work endless work."
+}

@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "name": "Speed",
+    "description": "You can toggle to be really fast.",
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "hidden": true,
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 1,
+            "operation": "multiply_base"
+        },
+        "tick_rate": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": false
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "name": "Tome Construction.",
+    "cooldown": 0,
+    "key": {
+        "key": "key.use",
+        "continuous": true
+    },
+    "description": "Use a book in your offhand and an item to create a tome, which can be used to give different effects. Stone Sword = Tome of Strength, Raw Iron = Tome of Defense, Sugar = Tome of Speed, Flint and Steel = Tome of Fireguard, MORE TO COME",
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:stone_sword"
+                    }
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:book"
+                    }
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "give @s book{display:{Name:'{\"text\":\"Tome of Strength\",\"color\":\"red\"}'},strongbook:1b,AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:3,Operation:0,UUID:[I;868644022,618286225,-1542821504,-515970231]}]} 1"
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "offhand",
+                "action": {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            }
+        ]
+    }
+}

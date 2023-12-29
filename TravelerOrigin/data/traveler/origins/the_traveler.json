@@ -1,0 +1,30 @@
+{
+	"powers": [
+		"traveler:tiny",
+		"traveler:climbing",
+		"traveler:inventory",
+		"traveler:water_walk",
+		"origins:fall_immunity",
+		"traveler:no_sleep",
+		"traveler:lightweight",
+		"traveler:squishy",
+		"traveler:no_elytra",
+		"traveler:water_resource",
+		"traveler:water_drain",
+		"traveler:sight",
+		"traveler:short_tp",
+		"origins:fire_immunity"
+	],
+	"icon": "minecraft:grass_block",
+	"order": 11,
+	"impact": 2,
+	"name": "The Traveler",
+	"description": "A small traveler adept at traversing the world.",
+	"upgrades": [
+		{
+			"condition": "minecraft:story/enter_the_nether",
+			"origin": "traveler:upgraded_traveler",
+			"announcement": "Congratulations! You've unlocked fast travel between the overworld and Nether."
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+    "type": "origins:multiple",
+    "name": "Worker drone",
+    "description": "You are specialized in long work, and you're an efficient miner and woodcutter.",
+    "effects": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:speed",
+                    "show_icon": false,
+                    "show_particles": false
+                },
+                {
+                    "effect": "minecraft:haste",
+                    "amplifier": 1,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            ]
+        }
+    },
+    "night_vision": {
+        "type": "origins:night_vision"
+    },
+    "mine": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "mech:minable_ore"
+                }
+            ]
+        },
+        "allow": true
+    },
+    "mine_speed":{
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "mech:minable_ore"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:using_effective_tool",
+            "inverted": true
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4
+        }
+    },
+    "double_ores":{
+        "type": "origins:replace_loot_table",
+        "replace":{
+            "([a-z|0-9|\\-|_]).*_ore": "mech:double_drops"
+        }
+    },
+    "double_logs":{
+        "type": "origins:replace_loot_table",
+        "replace":{
+            "([a-z|0-9|\\-|_]).*_log": "mech:double_drops"
+        }
+    },
+    "ancient_debris":{
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "minecraft:blocks/ancient_debris": "mech:auto_smelt_netherite"
+        }
+    }
+}

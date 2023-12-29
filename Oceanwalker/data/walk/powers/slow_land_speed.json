@@ -1,0 +1,22 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": "<=",
+        "compare_to": 0.0
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 21,
+            "show_icon": false,
+            "show_particles": false,
+            "amplifier": 2
+        }
+    },
+    "name": "Slowness",
+    "description": "You aren't used to how heavy you are out of water."
+}

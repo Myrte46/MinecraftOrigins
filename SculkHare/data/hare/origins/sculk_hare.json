@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"hare:climb",
+		"hare:neutral_spider",
+		"hare:less_health",
+		"hare:light_armor_only",
+		"hare:no_shield",
+		"hare:tiny",
+		"hare:control_mount",
+		"hare:sculk_shriek",
+		"hare:passive_warden",
+		"hare:faster_soul",
+		"hare:movement"
+	],
+	"icon": "minecraft:spider_eye",
+	"order": 10,
+	"impact": 2,
+	"name": "Sculk Hare",
+	"description": "You are a fluffy bunny from deep underground."
+}

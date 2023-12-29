@@ -1,0 +1,21 @@
+{
+    "type": "origins:multiple",
+    "no_fighting": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.25
+        }
+    },
+    "no_shield": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient":{
+                "item": "minecraft:shield"
+            }
+        }
+    },
+    "name": "Bad Fighter",
+    "description": "You deal less damage and you can't use a shield"
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "origins": [
+    "traveler:the_traveler",
+    "traveler:upgraded_traveler"
+  ]
+}

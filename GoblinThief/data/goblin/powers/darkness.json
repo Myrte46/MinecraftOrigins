@@ -1,0 +1,42 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Darkness lover",
+    "description": "In the darkness, you preform better.",
+    "interval": 20,
+    "condition": {
+        "type": "origins:brightness",
+        "compare_to": 0,
+        "comparison": "=="
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:haste",
+                "amplifier": 1,
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:speed",
+                "amplifier": 1,
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:strength",
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:regeneration",
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false
+            }
+        ]
+    }
+}

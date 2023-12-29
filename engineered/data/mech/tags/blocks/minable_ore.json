@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "#iron_ores",
+        "#coal_ores",
+        "#diamond_ores",
+        "#emerald_ores",
+        "#gold_ores",
+        "#lapis_ores",
+        "#redstone_ores"
+    ]
+}

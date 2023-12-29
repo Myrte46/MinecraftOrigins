@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"test:stronkmake",
+		"test:wither_skull_shoot",
+		"test:water_run"
+	],
+	"icon": "minecraft:command_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Test test",
+	"description": "For me to debug powers"
+}

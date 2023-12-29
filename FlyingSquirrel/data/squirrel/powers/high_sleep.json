@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+      "type": "origins:height",
+      "comparison": "<",
+      "compare_to": 79
+    },
+    "message": "You are uncomfortable. Find a higher spot to sleep.",
+    "name": "Trees Are My Home",
+    "description": "You can only sleep at y-levels above 80."
+  }

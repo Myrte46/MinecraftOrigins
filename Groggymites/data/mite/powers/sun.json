@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "burn": {
+        "type": "origins:burn",
+        "interval": 60,
+        "burn_duration": 1,
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        }
+    },
+    "blind": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:blindness",
+                "duration": 40,
+                "show_icon": false,
+                "show_particles": false
+            }
+        }
+    }
+}

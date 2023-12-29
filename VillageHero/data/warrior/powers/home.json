@@ -1,0 +1,43 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Home sweet home",
+    "description": "You get speed and strength in villages.",
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:speed",
+                        "show_icon": false,
+                        "show_particles": false
+                    },
+                    {
+                        "effect": "minecraft:strength",
+                        "show_icon": false,
+                        "show_particles": false
+                    }
+                ]
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "entity_type": "minecraft:villager",
+                "type": "origins:entity_type"
+            }
+        },
+        "radius": 32
+    },
+    "interval": 4,
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:beds"
+        },
+        "radius": 32
+    }
+}

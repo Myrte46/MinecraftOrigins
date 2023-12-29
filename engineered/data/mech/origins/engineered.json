@@ -1,0 +1,25 @@
+{
+	"powers": [
+		"mech:extra_inventory",
+		"mech:crafting_table",
+		"mech:no_falling",
+		"mech:keep_inventory",
+		"mech:tiny",
+		"mech:player_damage",
+		"mech:brittle",
+		"mech:drop_it",
+		"mech:flexibility",
+		"origins:no_shield",
+		"mech:worker",
+		"mech:no_sleep",
+		"mech:no_food",
+		"mech:immunities",
+		"mech:more_xp",
+		"mech:sink"
+	],
+	"icon": "minecraft:redstone",
+	"order": 10,
+	"impact": 2,
+	"name": "Engineered",
+	"description": "You are a partly biotic genetically engineered being from an age long past designed to work."
+}

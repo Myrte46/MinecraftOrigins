@@ -1,0 +1,118 @@
+{
+    "type": "origins:multiple",
+    "name": "Bright Light Bright Light",
+    "description": "You get blindness 1 and lose your night vision after being in the sun for over 30 seconds, goes away after 1 minute in the shade",
+    "exposing": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 30,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 14,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+        }
+    },
+    "pain_resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 7,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+        }
+    },
+    "over_time": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:exposed_to_sun"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_exposing",
+                "change": 1
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_exposing",
+                "change": -1
+            }
+        }
+    },
+    "pain": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_exposing",
+            "compare_to": 30,
+            "comparison": "=="
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": 60,
+            "resource": "*:*_pain_resource",
+            "operation": "set"
+        }
+    },
+    "lessen_pain": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pain_resource",
+                    "compare_to": 0,
+                    "comparison": "!="
+                },
+                {
+                    "type": "origins:exposed_to_sun",
+                    "inverted": true
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_pain_resource",
+            "change": -1
+        }
+    },
+    "blind": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_pain_resource",
+                    "compare_to": 0,
+                    "comparison": "!="
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:blindness",
+                "duration": 40,
+                "show_icon": true,
+                "show_particles": false
+            }
+        }
+    },
+    "night_vision": {
+        "type": "origins:night_vision",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_pain_resource",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    }
+}

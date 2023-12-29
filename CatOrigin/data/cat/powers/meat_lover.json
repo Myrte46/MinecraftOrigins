@@ -1,0 +1,16 @@
+{
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:meat",
+    "inverted": true
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:poison",
+      "duration": 200
+    }
+  },
+  "name": "Carnivore",
+  "description": "Eating anything but meat poisons you."
+}

@@ -1,0 +1,17 @@
+{
+    "name": "You have no need for armor.",
+    "description": "You can only equip a chestplate",
+    "type": "origins:restrict_armor",
+    "head": {
+        "type": "origins:is_equippable",
+        "equipment_slot": "head"
+    },
+    "legs": {
+        "type": "origins:is_equippable",
+        "equipment_slot": "legs"
+    },
+    "feet": {
+        "type": "origins:is_equippable",
+        "equipment_slot": "feet"
+    }
+}

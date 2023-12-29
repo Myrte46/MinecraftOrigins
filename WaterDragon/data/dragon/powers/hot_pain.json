@@ -1,0 +1,33 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Heat alergies",
+    "description": "In hot biomes, you get slowness and weakness",
+    "interval": 20,
+    "condition": {
+        "type": "origins:biome",
+        "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 1
+        }
+    },
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "duration": 21,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:slowness",
+                "duration": 21,
+                "is_ambient": false,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    }
+}

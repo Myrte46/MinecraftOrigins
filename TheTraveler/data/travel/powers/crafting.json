@@ -1,0 +1,11 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:crafting_table"
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "name": "Built-in Crafting",
+    "description": "You're capable of crafting without a crafting table. Weird."
+}

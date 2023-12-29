@@ -1,0 +1,22 @@
+{
+    "name": "CHARGE!!",
+    "description": "Dash forward in the direction you're looking.",
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "x": 0,
+        "y": 0.1,
+        "z": 1.2,
+        "space": "local",
+        "set": true
+    },
+    "key": {
+        "key": "key.saveToolbarActivator"
+    },
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 20,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png"
+    }
+}

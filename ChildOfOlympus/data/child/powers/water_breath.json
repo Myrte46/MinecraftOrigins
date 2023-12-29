@@ -1,0 +1,26 @@
+{
+    "type": "origins:multiple",
+    "breath": {
+        "type": "origins:action_over_time",
+        "condition": {
+            "type": "origins:air",
+            "comparison": "!=",
+            "compare_to": 300
+        },
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 20
+        }
+    },
+    "sight": {
+        "type": "origins:night_vision",
+        "strength": 1.0,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "name": "Ocean's child",
+    "description": "You can breathe underwater and see perfectly."
+}

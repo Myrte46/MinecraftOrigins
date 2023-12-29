@@ -1,0 +1,40 @@
+{
+    "type": "origins:active_self",
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 10,
+        "block": false,
+        "entity": true,
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:explode",
+                        "power": 4
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:heal",
+                        "amount": 20
+                    }
+                }
+            ]
+        }
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true
+    },
+    "name": "Beam",
+    "description": "Explode mobs and players with crouch + primary, including yourself if you stand too close!"
+}

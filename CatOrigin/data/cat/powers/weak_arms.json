@@ -1,0 +1,32 @@
+{
+    "name": "Weak Arms",
+    "description": "Unless affected by Resistance, mining speed is decreased when breaking natural stone adjacent to 3 or more others.",
+    "condition": {
+        "inverted": true,
+        "type": "origins:status_effect",
+        "effect": "minecraft:resistance"
+    },
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:in_tag",
+                "tag": "origins:natural_stone"
+            },
+            {
+                "type": "origins:adjacent",
+                "adjacent_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "origins:natural_stone"
+                },
+                "comparison": ">=",
+                "compare_to": 3
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.9
+    }
+}

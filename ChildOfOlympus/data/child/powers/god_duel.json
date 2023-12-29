@@ -1,0 +1,26 @@
+{
+    "type": "origins:modify_damage_taken",
+    "target_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:ender_dragon"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:elder_guardian"
+            },
+            {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:wither"
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 0.5
+    },
+    "name": "Gods duel",
+    "description": "The ender dragon, elder guardian and wither deal more damage."
+}

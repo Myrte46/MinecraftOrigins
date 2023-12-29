@@ -1,0 +1,70 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 1
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:raycast",
+                "shape_type": "visual",
+                "entity": true,
+                "block": false,
+                "fluid_handling": "none",
+                "bientity_action": {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:target_condition",
+                        "condition": {
+                          "type": "origins:in_tag",
+                          "tag": "dragon:nether_mobs"
+                        }
+                      }
+                    ,
+                    "if_action": {
+                        "type": "origins:damage",
+                        "amount": 12,
+                        "source": {
+                            "name": "magic",
+                            "bypasses_armor": false,
+                            "fire": false,
+                            "magic": true,
+                            "out_of_world": false,
+                            "unblockable": false
+                        }
+                    },
+                    "else_action": {
+                        "type": "origins:damage",
+                        "amount": 6,
+                        "source": {
+                            "name": "magic",
+                            "bypasses_armor": false,
+                            "fire": false,
+                            "magic": true,
+                            "out_of_world": false,
+                            "unblockable": false
+                        }
+                    }
+                },
+                "distance": 10,
+                "command_step": 0.25,
+                "command_along_ray": "particle minecraft:dust 0 0 1 1.5 ~ ~ ~ 0.1 0.1 0.1 0 2"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.generic.splash",
+                "pitch": 2,
+                "volume": 1
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "name": "Water Blast",
+    "description": "Every 10 seconds, you can shoot a beam of water, which does 3 hearts of damage."
+}

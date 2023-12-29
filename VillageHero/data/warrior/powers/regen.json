@@ -1,0 +1,14 @@
+{
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+        "type": "origins:heal",
+        "amount": 6
+    },
+    "target_condition": {
+        "type": "origins:in_tag",
+        "tag": "warrior:hostile_mobs"
+    },
+    "cooldown": 1,
+    "name": "Bloodlust",
+    "description": "Whenever you kill a mob you regain three hearts"
+}

@@ -1,0 +1,27 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Mechanics",
+    "description": "Due to your mechanical body, you have resistance, slowness and haste 2.",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:haste",
+                "show_icon": false,
+                "show_particles": false,
+                "amplifier": 1
+            },
+            {
+                "effect": "minecraft:slowness",
+                "show_icon": false,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:resistance",
+                "show_icon": false,
+                "show_particles": false
+            }
+        ]
+    },
+    "interval": 20
+}

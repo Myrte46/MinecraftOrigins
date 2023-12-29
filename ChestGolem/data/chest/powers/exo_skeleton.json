@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Natural Armor health bonus",
+        "attribute": "minecraft:generic.armor",
+        "value": 28.0,
+        "operation": "addition"
+    },
+    "name": "Exoskeleton",
+    "description": "You don't have bones but instead have a thick exoskeleton that gives you protection like a Diamond Armor."
+}

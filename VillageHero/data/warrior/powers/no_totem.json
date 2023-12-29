@@ -1,0 +1,20 @@
+{
+    "type": "origins:action_over_time",
+    "name": "No need...",
+    "description": "You are too prideful to use totems of undying.",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:drop_inventory",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:totem_of_undying"
+                    }
+                }
+            }
+        ]
+    },
+    "interval": 20
+}

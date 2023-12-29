@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5
+    },
+    "name": "Endurance",
+    "description": "You know how to walk long distances."
+}

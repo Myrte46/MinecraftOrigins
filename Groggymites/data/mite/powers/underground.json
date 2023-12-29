@@ -1,0 +1,29 @@
+{
+    "type": "origins:action_over_time",
+    "name": "Underground",
+    "description": "Underground, Groggymites have increased haste and speed.",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:haste",
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false,
+                "amplifier": 1
+            },
+            {
+                "effect": "minecraft:speed",
+                "duration": 21,
+                "show_icon": false,
+                "show_particles": false,
+                "amplifier": 2
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:exposed_to_sky",
+        "inverted": true
+    }
+}

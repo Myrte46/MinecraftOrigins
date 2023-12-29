@@ -1,0 +1,7 @@
+{
+    "name": "Restless",
+    "description": "You are unable to sleep, but phantoms still spawn for you.",
+    "type": "origins:prevent_sleep",
+    "set_spawn_point": true,
+    "message": "You don't feel tired enough to sleep"
+}

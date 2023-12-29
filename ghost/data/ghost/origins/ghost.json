@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"ghost:translucent_skin",
+		"ghost:strong"
+	],
+	"icon": "minecraft:pig_spawn_egg",
+	"order": 15,
+	"impact": 3,
+	"name": "ghost",
+	"description": "boo"
+}

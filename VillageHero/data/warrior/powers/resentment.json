@@ -1,0 +1,25 @@
+{
+    "type": "origins:self_action_on_kill",
+    "name": "Resentment",
+    "description": "You can't stomach killing non-hostile mobs.",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects":[
+            {
+                "effect": "minecraft:weakness",
+                "duration": 600
+            },
+            {
+                "effect": "minecraft:nausea",
+                "amplifier": 1,
+                "duration": 600
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:in_tag",
+        "tag": "warrior:hostile_mob",
+        "inverted": true
+    },
+    "cooldown": 20
+}

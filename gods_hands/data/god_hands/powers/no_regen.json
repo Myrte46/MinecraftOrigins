@@ -1,0 +1,5 @@
+{
+    "name": "No rgen",
+    "description": "you get no bi- no regen",
+    "type": "origins:disable_regen"
+}
